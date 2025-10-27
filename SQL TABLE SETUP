@@ -1,0 +1,15 @@
+CREATE DATABASE nimbusdb;
+USE nimbusdb;
+
+CREATE TABLE Employee (
+    EmpID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Salary DOUBLE
+);
+
+CREATE TABLE Attendance (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    StudentID INT,
+    Date DATE,
+    Status VARCHAR(10)
+);
